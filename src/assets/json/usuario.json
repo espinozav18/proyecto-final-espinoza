@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juan",
+        "apellidos": "Benavies Valbuena",
+        "dni": "05467954",
+        "fechanaciemiento": "01-12-2021",
+        "direccion": "jr. los alamos 135 Lima - Peru",
+        "usuario": "juan@gmail.com",
+        "password": "Compra01"
+    },
+    {
+        "id": 2,
+        "nombre": "Juan",
+        "apellidos": "Benavies Valbuena",
+        "dni": "05467954",
+        "fechanaciemiento": "01-12-2021",
+        "direccion": "jr. los alamos 135 Lima - Peru",
+        "usuario": "comprador01@gmail.com",
+        "password": "Comprador02"
+    },
+    {
+        "id": 3,
+        "nombre": "Juan",
+        "apellidos": "Benavies Valbuena",
+        "dni": "05467954",
+        "fechanaciemiento": "01-12-2021",
+        "direccion": "jr. los alamos 135 Lima - Peru",
+        "usuario": "coderhouse@gmail.com",
+        "password": "Coders2021"
+    }
+]

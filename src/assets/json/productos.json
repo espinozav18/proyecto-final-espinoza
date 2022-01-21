@@ -1,0 +1,44 @@
+[{
+    "id":1,
+    "nombre":"TECLADO+MOUSE LOGITECH MK120 USB SP BLACK",
+    "modelo":"MK120",
+    "marca":"LOGITECH",
+    "descripcion":"Teclado elegante y cómodo, y ratón óptico de alta definición: una combinación USB resistente, cómoda, elegante y sencilla a la vez.",
+    "moneda":"S/",
+    "precio":65.60,
+    "stock":10,
+    "imagenes":["teclado01.jpg"]
+},
+{
+    "id":2,
+    "nombre":"MOUSE LOGITECH M90 DARK MIDNIGHT USB BLACK",
+    "modelo":"M90",
+    "marca":"LOGITECH",
+    "descripcion":"Excelente relación calidad-precio, y control fiable y cómodo del ordenador.",
+    "moneda":"S/",
+    "precio":25.55,
+    "stock":0,
+    "imagenes":["mouse01.jpg"]
+},
+{
+    "id":3,
+    "nombre":"GRABADOR DE DVD LG GP65NB60 SLIM USB EXTERNO",
+    "modelo":"GP65NB60 SLIM",
+    "marca":"LG",
+    "descripcion":"DVD SuperMultil LG GP65NB60, externo, 8X, USB 2.0. Formatos soportados M-DISC / CD-R / CD-RW / DVD+R / DVD+R DL / DVD+RW / DVD-R / DVD-R DL / DVD-RAM / DVD-RW.",
+    "moneda":"S/",
+    "precio":118.90,
+    "stock":10,
+    "imagenes":["grabador01.jpg"]
+},
+{
+    "id":4,
+    "nombre":"IMPRESORA EPSON MULTIFUNCIONAL ECOTANK L3210 USB ",
+    "modelo":"L3210",
+    "marca":"EPSON",
+    "descripcion":"Impresora multifuncional EPSON ECOTANK L3210, conexion USB.",
+    "moneda":"S/",
+    "precio":922.50,
+    "stock":10,
+    "imagenes":["impresora01.jpg"]
+}]

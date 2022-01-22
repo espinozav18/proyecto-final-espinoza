@@ -19,6 +19,10 @@ export default new Vuex.Store({
     }
 
   },
+  /*getters: {
+    loginUsuario: state => state.loginUsuario,
+
+  },*/
   mutations: {
     LISTAR_PRODUCTOS_VENTA(state, payload) {
       state.listaProductos = payload;
@@ -39,12 +43,14 @@ export default new Vuex.Store({
       state.detallePedido = payload;
     },
     //inicio Usuario
-
+    LISTAR_USUARIO_LOGIN(state, payload){
+      state.loginUsuario.datosLogin = payload;
+    },
     ACTUALIZAR_ESTADO_LOGIN(state, payload) {
       state.loginUsuario.login = payload;
     },
     ACTUALIZAR_ESTADO_DIALOG(state, payload) {
-      state.loginUsuario.dialog = payload.dialog;
+      state.loginUsuario.dialog = payload;
     },
     ACTUALIZAR_ESTADO_ADMIN(state, payload) {
       state.loginUsuario.admin = payload;
@@ -148,7 +154,7 @@ export default new Vuex.Store({
 
 
     },
-    cambios_estado(context,payload) {
+    cambios_estado_dialogo(context,payload) {
       context.commit("ACTUALIZAR_ESTADO_DIALOG", payload);
     }
     //FIN Usuario

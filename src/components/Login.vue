@@ -10,7 +10,7 @@
         "
         v-show="login"
       >
-        <v-icon>mdi-account</v-icon>
+        <v-icon>mdi-account</v-icon>222
       </v-btn>
       <router-link
         dark
@@ -98,7 +98,7 @@
       </v-card-text>
       <v-card-actions offset-y>
         <v-spacer></v-spacer>
-        <v-btn color="error" class="mr-4" @click="dialog = false">
+        <v-btn color="error" class="mr-4" @click="cerrarDialogo(false)">
           Cancelar
         </v-btn>
         <v-btn
@@ -161,6 +161,15 @@ export default {
       usuario: (state) => state.loginUsuario.datosLogin,
       mensaje: (state) => state.loginUsuario.mensaje,
     }),
+    /*dialog: {
+      get: function () {
+        return (state) => state.loginUsuario.dialog
+      },
+
+      set: function (value) {
+        return value;
+      },
+    },*/
   },
   methods: {
     cerrarDialogs(param) {
@@ -169,6 +178,9 @@ export default {
       this.email = param.usuario;
       this.password = "";
       this.mensajeRegistro = "Usuario Se creo satisfactorimente";
+    },
+    cerrarDialogo(show) {
+      this.$store.dispatch("cambios_estado_dialogo", show);
     },
 
     async validate() {
@@ -187,11 +199,11 @@ export default {
           this.usuario = validUsuario;
           this.mensajeRegistro = "";
         } else {*/
-          await this.$store.dispatch("buscarUsuarioLogin", {
-            email: this.email,
-            password: this.password,
-          });
-          /*axios
+        await this.$store.dispatch("buscarUsuarioLogin", {
+          email: this.email,
+          password: this.password,
+        });
+        /*axios
                                .get(`https://61b75f4e64e4a10017d18ae0.mockapi.io/usuarios`, {})
                                .then((rpta) => {
                                  if (rpta.status == 201 || rpta.status == 200) {
@@ -214,7 +226,7 @@ export default {
                                .catch((error) => {
                                  this.mensaje = error.response.status + ": " + error.message;
                                });*/
-       // }
+        // }
       }
     },
     reset() {
